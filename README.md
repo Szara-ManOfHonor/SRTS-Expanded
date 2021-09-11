@@ -1,7 +1,7 @@
 *Updates will not be made for old versions of Rimworld.* 
 
 This version will be balanced for the HSK modpack, check out our Discord at https://discord.gg/VrmrybqufD
-This is not a release version. Do not use it yet.
+This is a beta version.
 
 Copyright (c) 2020 Starflight Creative
 
