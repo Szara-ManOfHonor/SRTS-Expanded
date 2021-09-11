@@ -1,7 +1,7 @@
-*Please note there will be no further updates or changes to the 1.0 code.* **Future updates will only apply to 1.1!**
+*Updates will not be made for old versions of Rimworld.* 
 
-### Please join our discord 
-Report bugs and weird things: https://discordapp.com/invite/AvV7DT5
+This version will be balanced for the HSK modpack, check out our Discord at https://discord.gg/VrmrybqufD
+This is not a release version. Do not use it yet.
 
 Copyright (c) 2020 Starflight Creative
 
