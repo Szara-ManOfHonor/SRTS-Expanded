@@ -2,7 +2,7 @@
 
 This version will be balanced for the HSK modpack, check out our Discord at https://discord.gg/VrmrybqufD
 
-This is a beta version.
+This is a beta version. Bombing does not work and is removed.
 
 Copyright (c) 2020 Starflight Creative
 
