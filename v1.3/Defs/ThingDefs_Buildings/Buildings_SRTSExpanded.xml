@@ -52,6 +52,7 @@ Cargo capacity: 120kg
 Internal power plant: 400w</description>
     <graphicData>
       <texPath>Superpod</texPath>
+	  <shaderType>CutoutComplex</shaderType>
       <graphicClass>Graphic_Single</graphicClass>
       <drawSize>(2,2)</drawSize>
       <drawRotated>false</drawRotated>
@@ -59,17 +60,21 @@ Internal power plant: 400w</description>
     <size>(2,2)</size>
     <rotatable>false</rotatable>
     <statBases>
-      <MaxHitPoints>200</MaxHitPoints>
-      <WorkToBuild>2400</WorkToBuild>
+      <MaxHitPoints>500</MaxHitPoints>
+      <WorkToBuild>5000</WorkToBuild>
       <Flammability>0.4</Flammability>
-      <Mass>20</Mass>
+      <Mass>2640</Mass>
       <Beauty>15</Beauty>
     </statBases>
+		<stuffCategories>
+			<li>Metallic</li>
+		</stuffCategories>
+		<costStuffCount>120</costStuffCount>
     <costList>
-      <Steel>700</Steel>
-      <Gold>45</Gold>
-      <Silver>2000</Silver>
-      <ComponentIndustrial>12</ComponentIndustrial>
+			<ReinforcedGlass>15</ReinforcedGlass>
+			<Plastic>15</Plastic>
+			<ComponentIndustrial>8</ComponentIndustrial>
+			<Electronics>4</Electronics>
     </costList>
     <comps>
       <li Class="CompProperties_Transporter">
@@ -85,16 +90,15 @@ Internal power plant: 400w</description>
         <shuttleBayLanding>false</shuttleBayLanding>
       </li>
       <li Class="CompProperties_Refuelable">
-        <fuelCapacity>300</fuelCapacity>
+        <fuelCapacity>600</fuelCapacity>
         <targetFuelLevelConfigurable>true</targetFuelLevelConfigurable>
-        <initialConfigurableTargetFuelLevel>300</initialConfigurableTargetFuelLevel>
+        <initialConfigurableTargetFuelLevel>600</initialConfigurableTargetFuelLevel>
         <fuelFilter>
           <thingDefs>
             <li>Chemfuel</li>
           </thingDefs>
         </fuelFilter>
         <consumeFuelOnlyWhenUsed>true</consumeFuelOnlyWhenUsed>
-        <initialFuelPercent>0.25</initialFuelPercent>
         <autoRefuelPercent>1</autoRefuelPercent>
         <showFuelGizmo>true</showFuelGizmo>
         <drawOutOfFuelOverlay>false</drawOutOfFuelOverlay>
@@ -115,7 +119,7 @@ Internal power plant: 400w</description>
     <researchPrerequisites>
       <li>Research_SRTSSuperpod</li>
     </researchPrerequisites>
-    <constructionSkillPrerequisite>5</constructionSkillPrerequisite>
+    <constructionSkillPrerequisite>6</constructionSkillPrerequisite>
     <uiIconScale>0.75</uiIconScale>
     <killedLeavings>
       <ChunkSlagSteel>2</ChunkSlagSteel>
@@ -145,22 +149,28 @@ Internal power plant: 650w</description> <!-- description of course... -->
       <texPath>Skip</texPath> <!-- filepath starting from Textures folder, our textures our not organized so.. no file path can be noticed lol "-P"
 
       Pfft. Organization. "-N" -->
+	  <shaderType>CutoutComplex</shaderType>
       <graphicClass>Graphic_Multi</graphicClass> <!-- graphic class can be left alone, it's how the game pulls _north, _east, _south textures -->
       <drawSize>(4,4)</drawSize> <!-- how much the image is stretched out ingame -->
     </graphicData>
     <size>(2,2)</size> <!-- hitbox -->
     <statBases>
-      <MaxHitPoints>350</MaxHitPoints> <!-- hitpoints of the building -->
+      <MaxHitPoints>450</MaxHitPoints> <!-- hitpoints of the building -->
       <WorkToBuild>7200</WorkToBuild> <!-- how much work it costs to build, which is more like a base type, as more properties affect it, resulting in a different final number for construction -->
       <Flammability>0.7</Flammability> <!-- how easy it is to catch on fire (duh) -->
-      <Mass>20</Mass> <!-- how much it weighs for a pawn to carry. My guess is they are light in this mod so pawns entering a map will throw it in their inventory rather than lose it, but i can check that later. -->
+      <Mass>3865</Mass> <!-- how much it weighs for a pawn to carry. My guess is they are light in this mod so pawns entering a map will throw it in their inventory rather than lose it, but i can check that later. -->
       <Beauty>25</Beauty> <!-- beauty on overlap, and for pawns -->
     </statBases>
-    <costList> <!-- Costs to build, the names are the defNames of items -->
-      <Steel>1200</Steel>
-      <Gold>100</Gold>
-      <Silver>1800</Silver>
-      <ComponentIndustrial>12</ComponentIndustrial>
+		<stuffCategories>
+			<li>Metallic</li>
+		</stuffCategories>
+		<costStuffCount>240</costStuffCount>
+		<costList>
+			<ReinforcedGlass>30</ReinforcedGlass>
+			<Plastic>30</Plastic>
+			<ComponentIndustrial>20</ComponentIndustrial>
+			<Electronics>10</Electronics>
+			<ElectronicComponents>1</ElectronicComponents>
     </costList>
     <comps> <!-- required for sending as drop pod -->
       <li Class="CompProperties_Transporter">
@@ -192,7 +202,6 @@ Internal power plant: 650w</description> <!-- description of course... -->
           </thingDefs>
         </fuelFilter>
         <consumeFuelOnlyWhenUsed>true</consumeFuelOnlyWhenUsed>
-        <initialFuelPercent>0.25</initialFuelPercent>
         <autoRefuelPercent>1</autoRefuelPercent>
         <showFuelGizmo>true</showFuelGizmo>
         <drawOutOfFuelOverlay>false</drawOutOfFuelOverlay>
@@ -226,57 +235,66 @@ Internal power plant: 650w</description> <!-- description of course... -->
     <label>SRAF: Canary</label>
     <description>Short Range Aerial Freighter. A transport system made to fly cargo across the world, but almost no room for passengers. These industrial behemoths have been in service for millenia.
 
-Passenger cap: 1 - 3
+Passenger cap: 1 - 15
 ----------------------------
 Speed: Poor
-Fuel cap: 2,000L
+Fuel cap: 5,000L
 Fuel efficiency: Poor
 ----------------------------
-Cargo cap: 5,000kg
+Cargo cap: 15,000kg
 Internal power plant: 1000w</description>
     <graphicData>
       <texPath>Freighter</texPath>
+	  <shaderType>CutoutComplex</shaderType>
       <graphicClass>Graphic_Multi</graphicClass>
       <drawSize>(15,15)</drawSize>
     </graphicData>
     <size>(5,9)</size>
     <statBases>
-      <MaxHitPoints>1000</MaxHitPoints>
+      <MaxHitPoints>6000</MaxHitPoints>
       <WorkToBuild>32000</WorkToBuild>
       <Flammability>0.3</Flammability>
-      <Mass>20</Mass>
+      <Mass>55650</Mass>
       <Beauty>25</Beauty>
     </statBases>
+		<stuffCategories>
+			<li>Metallic</li>
+		</stuffCategories>
+		<costStuffCount>2400</costStuffCount>
     <costList>
-      <Steel>3200</Steel>
-      <Gold>225</Gold>
-      <Silver>3200</Silver>
-      <ComponentIndustrial>16</ComponentIndustrial>
+			<ReinforcedGlass>60</ReinforcedGlass>
+			<Plastic>60</Plastic>
+			<ComponentIndustrial>20</ComponentIndustrial>
+            <ComponentSpacer>10</ComponentSpacer>
+			<Mechanism>20</Mechanism>
+			<AdvMechanism>10</AdvMechanism>
+			<Electronics>20</Electronics>
+			<ElectronicComponents>10</ElectronicComponents>
+			<Microchips>2</Microchips>
     </costList>
     <comps>
       <li Class="CompProperties_Transporter">
-        <restEffectiveness>0.5</restEffectiveness>
-        <massCapacity>5000</massCapacity>
+        <restEffectiveness>0.6</restEffectiveness>
+        <massCapacity>15000</massCapacity>
       </li>
       <li Class="SRTS.CompProperties_LaunchableSRTS">
-        <travelSpeed>3</travelSpeed>
-        <fuelPerTile>4</fuelPerTile>
+        <travelSpeed>5</travelSpeed>
+        <fuelPerTile>3.6</fuelPerTile>
         <minPassengers>1</minPassengers>
-        <maxPassengers>3</maxPassengers>
+        <maxPassengers>15</maxPassengers>
         <spaceFaring>false</spaceFaring>
         <shuttleBayLanding>false</shuttleBayLanding>
       </li>
       <li Class="CompProperties_Refuelable">
-        <fuelCapacity>2000</fuelCapacity>
+        <fuelCapacity>5000</fuelCapacity>
         <targetFuelLevelConfigurable>true</targetFuelLevelConfigurable>
-        <initialConfigurableTargetFuelLevel>2000</initialConfigurableTargetFuelLevel>
+        <initialConfigurableTargetFuelLevel>5000</initialConfigurableTargetFuelLevel>
         <fuelFilter>
           <thingDefs>
             <li>Chemfuel</li>
           </thingDefs>
         </fuelFilter>
         <consumeFuelOnlyWhenUsed>true</consumeFuelOnlyWhenUsed>
-        <initialFuelPercent>0.25</initialFuelPercent>
         <autoRefuelPercent>1</autoRefuelPercent>
         <showFuelGizmo>true</showFuelGizmo>
         <drawOutOfFuelOverlay>false</drawOutOfFuelOverlay>
@@ -296,7 +314,7 @@ Internal power plant: 1000w</description>
     <researchPrerequisites>
       <li>Research_SRAF</li>
     </researchPrerequisites>
-    <constructionSkillPrerequisite>7</constructionSkillPrerequisite>
+    <constructionSkillPrerequisite>9</constructionSkillPrerequisite>
     <uiIconScale>0.75</uiIconScale>
     <killedLeavings>
       <ChunkSlagSteel>8</ChunkSlagSteel>
@@ -307,7 +325,7 @@ Internal power plant: 1000w</description>
   <ThingDef ParentName="NECShipBase">
     <defName>SRAFTek</defName>
     <label>SRAF: TEK-7</label>
-    <description>An aerial vessel designed to hold many people, with several automatic launchbays able to hold a person, and quickly eject said person to the outside of the ship. Huge cargo capacity.
+    <description>An aerial vessel designed to hold many people, with several automatic launchbays able to hold a person, and quickly eject said person to the outside of the ship. Significant cargo capacity.
 
 Passenger cap: 1 - 28
 Space flight: Yes
@@ -320,6 +338,7 @@ Cargo cap: 10,000kg
 Internal power plant: 1,700w</description>
     <graphicData>
       <texPath>TEK7</texPath>
+	  <shaderType>CutoutComplex</shaderType>
       <graphicClass>Graphic_Multi</graphicClass>
       <drawSize>(15,15)</drawSize>
     </graphicData>
@@ -331,11 +350,20 @@ Internal power plant: 1,700w</description>
       <Mass>20</Mass>
       <Beauty>50</Beauty>
     </statBases>
+		<stuffCategories>
+			<li>Metallic</li>
+		</stuffCategories>
+		<costStuffCount>1800</costStuffCount>
     <costList>
-      <Steel>4500</Steel>
-      <Gold>350</Gold>
-      <Silver>6000</Silver>
-      <ComponentIndustrial>20</ComponentIndustrial>
+			<ReinforcedGlass>50</ReinforcedGlass>
+			<Plastic>50</Plastic>
+			<ComponentIndustrial>17</ComponentIndustrial>
+            <ComponentSpacer>9</ComponentSpacer>
+			<Mechanism>20</Mechanism>
+			<AdvMechanism>10</AdvMechanism>
+			<Electronics>20</Electronics>
+			<ElectronicComponents>15</ElectronicComponents>
+			<Microchips>1</Microchips>
     </costList>
     <comps>
       <li Class="CompProperties_Transporter">
@@ -360,7 +388,6 @@ Internal power plant: 1,700w</description>
           </thingDefs>
         </fuelFilter>
         <consumeFuelOnlyWhenUsed>true</consumeFuelOnlyWhenUsed>
-        <initialFuelPercent>0.25</initialFuelPercent>
         <autoRefuelPercent>1</autoRefuelPercent>
         <showFuelGizmo>true</showFuelGizmo>
         <drawOutOfFuelOverlay>false</drawOutOfFuelOverlay>
@@ -404,10 +431,11 @@ Speed: Good
 Fuel cap: 1,600L
 Fuel efficiency: Good
 ----------------------------
-Cargo capy: 2,200kg
+Cargo capy: 4,000kg
 Internal power plant: 1,700w</description>
     <graphicData>
       <texPath>Albatross</texPath>
+	  <shaderType>CutoutComplex</shaderType>
       <graphicClass>Graphic_Multi</graphicClass>
       <drawSize>(9,9)</drawSize>
     </graphicData>
@@ -419,23 +447,29 @@ Internal power plant: 1,700w</description>
       <Mass>20</Mass>
       <Beauty>50</Beauty>
     </statBases>
+		<stuffCategories>
+			<li>Metallic</li>
+		</stuffCategories>
+		<costStuffCount>1200</costStuffCount>
     <costList>
-      <Steel>2500</Steel>
-      <Plasteel>240</Plasteel>
-      <Gold>325</Gold>
-      <Silver>6000</Silver>
-      <Synthread>100</Synthread>
-      <ComponentIndustrial>16</ComponentIndustrial>
-      <ComponentSpacer>4</ComponentSpacer>
+			<ReinforcedGlass>50</ReinforcedGlass>
+			<Plastic>120</Plastic>
+			<ComponentIndustrial>10</ComponentIndustrial>
+            <ComponentSpacer>6</ComponentSpacer>
+			<Mechanism>10</Mechanism>
+			<AdvMechanism>6</AdvMechanism>
+			<Electronics>20</Electronics>
+			<ElectronicComponents>6</ElectronicComponents>
+			<Microchips>1</Microchips>
     </costList>
     <comps>
       <li Class="CompProperties_Transporter">
         <restEffectiveness>1</restEffectiveness>
-        <massCapacity>2200</massCapacity>
+        <massCapacity>4000</massCapacity>
       </li>
       <li Class="SRTS.CompProperties_LaunchableSRTS">
         <travelSpeed>11</travelSpeed>
-        <fuelPerTile>2</fuelPerTile>
+        <fuelPerTile>1.75</fuelPerTile>
         <minPassengers>1</minPassengers>
         <maxPassengers>7</maxPassengers>
         <spaceFaring>true</spaceFaring>
@@ -458,7 +492,6 @@ Internal power plant: 1,700w</description>
           </thingDefs>
         </fuelFilter>
         <consumeFuelOnlyWhenUsed>true</consumeFuelOnlyWhenUsed>
-        <initialFuelPercent>0.25</initialFuelPercent>
         <autoRefuelPercent>1</autoRefuelPercent>
         <showFuelGizmo>true</showFuelGizmo>
         <drawOutOfFuelOverlay>false</drawOutOfFuelOverlay>
@@ -502,10 +535,11 @@ Speed: Excellent
 Fuel cap: 2,800L
 Fuel efficiency: Excellent
 ----------------------------
-Cargo cap: 3,600kg
+Cargo cap: 6,000kg
 Internal power plant: 3,600w</description>
     <graphicData>
       <texPath>Phoenix</texPath>
+	  <shaderType>CutoutComplex</shaderType>
       <graphicClass>Graphic_Multi</graphicClass>
       <drawSize>(11,11)</drawSize>
     </graphicData>
@@ -517,24 +551,30 @@ Internal power plant: 3,600w</description>
       <Mass>20</Mass>
       <Beauty>75</Beauty>
     </statBases>
+		<stuffCategories>
+			<li>Metallic</li>
+		</stuffCategories>
+		<costStuffCount>1800</costStuffCount>
     <costList>
-      <Steel>700</Steel>
-      <Plasteel>1200</Plasteel>
-      <Gold>500</Gold>
-      <Silver>10500</Silver>
-      <Synthread>240</Synthread>
+			<ReinforcedGlass>120</ReinforcedGlass>
+			<Plastic>230</Plastic>
+			<ComponentIndustrial>20</ComponentIndustrial>
+            <ComponentSpacer>20</ComponentSpacer>
+			<Mechanism>20</Mechanism>
+			<AdvMechanism>20</AdvMechanism>
+			<Electronics>20</Electronics>
+			<ElectronicComponents>20</ElectronicComponents>
+			<Microchips>2</Microchips>
       <Neutroamine>100</Neutroamine>
-      <ComponentIndustrial>24</ComponentIndustrial>
-      <ComponentSpacer>8</ComponentSpacer>
     </costList>
     <comps>
       <li Class="CompProperties_Transporter">
         <restEffectiveness>2</restEffectiveness>
-        <massCapacity>3600</massCapacity>
+        <massCapacity>6000</massCapacity>
       </li>
       <li Class="SRTS.CompProperties_LaunchableSRTS">
         <travelSpeed>20</travelSpeed>
-        <fuelPerTile>1</fuelPerTile>
+        <fuelPerTile>1.25</fuelPerTile>
         <minPassengers>1</minPassengers>
         <maxPassengers>17</maxPassengers>
 		    <spaceFaring>true</spaceFaring>
@@ -557,7 +597,6 @@ Internal power plant: 3,600w</description>
           </thingDefs>
         </fuelFilter>
         <consumeFuelOnlyWhenUsed>true</consumeFuelOnlyWhenUsed>
-        <initialFuelPercent>0.25</initialFuelPercent>
         <autoRefuelPercent>1</autoRefuelPercent>
         <showFuelGizmo>true</showFuelGizmo>
         <drawOutOfFuelOverlay>false</drawOutOfFuelOverlay>
@@ -600,6 +639,7 @@ Cargo cap: 20,000kg
 Internal power plant: 2,800w</description>
     <graphicData>
       <texPath>Pelican</texPath>
+	  <shaderType>CutoutComplex</shaderType>
       <graphicClass>Graphic_Multi</graphicClass>
       <drawSize>(25,25)</drawSize>
     </graphicData>
@@ -611,23 +651,31 @@ Internal power plant: 2,800w</description>
       <Mass>20</Mass>
       <Beauty>75</Beauty>
     </statBases>
+		<stuffCategories>
+			<li>Metallic</li>
+		</stuffCategories>
+		<costStuffCount>3500</costStuffCount>
     <costList>
-      <Steel>2800</Steel>
-      <Plasteel>1300</Plasteel>
-      <Gold>500</Gold>
+			<ReinforcedGlass>340</ReinforcedGlass>
+			<Plastic>460</Plastic>
+			<ComponentIndustrial>40</ComponentIndustrial>
+            <ComponentSpacer>40</ComponentSpacer>
+			<Mechanism>40</Mechanism>
+			<AdvMechanism>40</AdvMechanism>
+			<Electronics>40</Electronics>
+			<ElectronicComponents>40</ElectronicComponents>
+			<Microchips>5</Microchips>
       <Neutroamine>200</Neutroamine>
-      <Silver>10500</Silver>
-      <ComponentIndustrial>32</ComponentIndustrial>
-      <ComponentSpacer>9</ComponentSpacer>
+			<MagneticMaterial>20</MagneticMaterial>
     </costList>
     <comps>
       <li Class="CompProperties_Transporter">
-        <restEffectiveness>3</restEffectiveness>
+        <restEffectiveness>2</restEffectiveness>
         <massCapacity>20000</massCapacity>
       </li>
       <li Class="SRTS.CompProperties_LaunchableSRTS">
         <travelSpeed>20</travelSpeed>
-        <fuelPerTile>1</fuelPerTile>
+        <fuelPerTile>1.25</fuelPerTile>
         <minPassengers>1</minPassengers>
         <maxPassengers>42</maxPassengers>
         <spaceFaring>true</spaceFaring>
@@ -674,7 +722,7 @@ Internal power plant: 2,800w</description>
   <ThingDef ParentName="NECShipBase">
     <defName>SRTSMkIV</defName>
     <label>SRTS Mk.IV: Genesis</label>
-    <description>The Genesis transport ship is highly advanced archotech technology. Somehow it fuels itself with a spec of uranium, and incorporates extra dimensional shiftspace to haul cargo much heavier and bigger than the ship itself. The ship seems to construct itself once the parts are brought together.
+    <description>The Genesis transport ship is highly advanced archotech technology. Somehow it fuels itself with a spec of uranium, and incorporates extra dimensional shiftspace to haul cargo much heavier and bigger than the ship itself.
 
 Passenger cap: No limit
 
@@ -684,14 +732,15 @@ Passenger cap: No limit
   Build: Ultimate
 ----------------------------
 Speed: Legendary
-Fuel type: ???
-Fuel cap: ???
-Fuel efficiency: ???
+Fuel type: Uranium
+Fuel cap: Practically unlimited
+Fuel efficiency: Ultimate
 ----------------------------
 Cargo cap: No Max
 Internal power plant: 12,000w</description>
     <graphicData>
       <texPath>Genesis</texPath>
+	  <shaderType>CutoutComplex</shaderType>
       <graphicClass>Graphic_Single</graphicClass>
       <drawSize>(9,9)</drawSize>
       <drawRotated>false</drawRotated>
@@ -699,23 +748,31 @@ Internal power plant: 12,000w</description>
     <size>(5,5)</size>
     <rotatable>false</rotatable>
     <statBases>
-      <MaxHitPoints>9999999</MaxHitPoints>
-      <WorkToBuild>1000</WorkToBuild>
+      <MaxHitPoints>3000000</MaxHitPoints>
+      <WorkToBuild>35000</WorkToBuild>
       <Flammability>0</Flammability>
       <Mass>20</Mass>
       <Beauty>1000</Beauty>
     </statBases>
+ 		<stuffCategories>
+			<li>Metallic</li>
+		</stuffCategories>
+		<costStuffCount>8000</costStuffCount>
     <costList>
-      <Steel>5600</Steel>
-      <Plasteel>2400</Plasteel>
-      <Gold>2400</Gold>
-      <Silver>50000</Silver>
-      <Uranium>600</Uranium>
-      <Hyperweave>300</Hyperweave>
+			<ReinforcedGlass>1000</ReinforcedGlass>
+			<Plastic>1100</Plastic>
+			<ComponentIndustrial>200</ComponentIndustrial>
+            <ComponentSpacer>70</ComponentSpacer>
+			<Mechanism>130</Mechanism>
+			<AdvMechanism>80</AdvMechanism>
+			<Electronics>120</Electronics>
+			<ElectronicComponents>90</ElectronicComponents>
+			<Microchips>20</Microchips>
       <Neutroamine>400</Neutroamine>
-      <ComponentIndustrial>32</ComponentIndustrial>
-      <ComponentSpacer>16</ComponentSpacer>
-      <AIPersonaCore>3</AIPersonaCore>
+			<MagneticMaterial>40</MagneticMaterial>
+			<Uranium>1</Uranium>
+			<BiosyntheticMaterial>30</BiosyntheticMaterial>
+			<Hexcell>30</Hexcell>
     </costList>
     <comps>
       <li Class="CompProperties_Transporter">

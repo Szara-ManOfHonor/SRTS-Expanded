@@ -29,6 +29,9 @@
     <researchViewX>1</researchViewX>
     <researchViewY>0</researchViewY>
     <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+    <discoveredLetterTitle>Short Range Transport Ships</discoveredLetterTitle>
+    <discoveredLetterText>Building a shuttle is expensive and time consuming, but absolutely worth the cost.\n\nYou will find your ship blueprints under the SHIP tab, in your architech menu.</discoveredLetterText>
+    <discoveredLetterMinDifficulty>1</discoveredLetterMinDifficulty>
   </ResearchProjectDef>
 
   <ResearchProjectDef>
@@ -84,6 +87,9 @@
     <requiredResearchFacilities>
         <li>MultiAnalyzer</li>
     </requiredResearchFacilities>
+    <discoveredLetterTitle>Albatross X-11</discoveredLetterTitle>
+    <discoveredLetterText>You've unocked the Albatross X-11, an earlier design used for military exoplanetrary exploration.</discoveredLetterText>
+    <discoveredLetterMinDifficulty>1</discoveredLetterMinDifficulty>
   </ResearchProjectDef>
 
   <ResearchProjectDef>
@@ -102,6 +108,13 @@
     <requiredResearchFacilities>
       <li>MultiAnalyzer</li>
     </requiredResearchFacilities>
+    <techprintCount>2</techprintCount>
+    <techprintCommonality>3</techprintCommonality>
+    <techprintMarketValue>2760</techprintMarketValue>
+    <heldByFactionCategoryTags>
+        <li>Empire</li>
+        <li>Outlander</li>
+    </heldByFactionCategoryTags>
   </ResearchProjectDef>
 
   <ResearchProjectDef>
@@ -121,14 +134,21 @@
     <requiredResearchFacilities>
       <li>MultiAnalyzer</li>
     </requiredResearchFacilities>
+    <techprintCount>2</techprintCount>
+    <techprintCommonality>2.6</techprintCommonality>
+    <techprintMarketValue>2040</techprintMarketValue>
+    <heldByFactionCategoryTags>
+        <li>Empire</li>
+        <li>Outlander</li>
+    </heldByFactionCategoryTags>
   </ResearchProjectDef>
 
   <ResearchProjectDef>
     <tab>SRTSE</tab>
     <defName>Research_SRTSMkIV</defName>
     <label>The Genesis</label>
-    <description>The SRTS Mk.4: Genesis is a highly advanced transport shuttle that utilizes uranium for fuel, and incorporates archotech level technology to increase the cargo space beyond dimensional boundaries. This is "Blue box" level stuff.\n\nThis blueprint seems like it simply won't work with how advanced it is, but we won't know unless we try.</description>
-    <baseCost>36000</baseCost>
+    <description>The Genesis is a highly advanced transport shuttle that utilizes uranium for fuel, and incorporates archotech level technology to increase the cargo space beyond dimensional boundaries. This is "Blue box" level stuff.\n\nThis blueprint seems like it simply won't work with how advanced it is, but we won't know unless we try.</description>
+    <baseCost>34000</baseCost>
     <techLevel>Archotech</techLevel>
     <prerequisites>
       <li>Research_SRTSMkIII</li>
@@ -142,24 +162,13 @@
     <discoveredLetterTitle>The Genesis</discoveredLetterTitle>
     <discoveredLetterText>A few of the components needed to build the Genesis elude you. You don't think you can craft them yourself being how complicated they are. At least not yet.\n\nFor now, buy the more advanced components from traders or as quest rewards to build the Genesis.</discoveredLetterText>
     <discoveredLetterMinDifficulty>1</discoveredLetterMinDifficulty>
+    <techprintCount>3</techprintCount>
+    <techprintCommonality>1.5</techprintCommonality>
+    <techprintMarketValue>3000</techprintMarketValue>
+    <heldByFactionCategoryTags>
+        <li>Empire</li>
+        <li>Outlander</li>
+    </heldByFactionCategoryTags>
   </ResearchProjectDef>
-
-  <!-- <ResearchProjectDef>
-    <tab>SRTSE</tab>
-    <defName>Research_SRTSArchoComps</defName>
-    <label>Archotech Ship Components</label>
-    <description>Learn the techniques to build the super advanced components necessary to build the mythical Genesis.</description>
-    <baseCost>50000</baseCost>
-    <techLevel>Archotech</techLevel>
-    <prerequisites>
-      <li>Research_SRTSMkIV</li>
-    </prerequisites>
-    <researchViewX>5</researchViewX>
-    <researchViewY>1</researchViewY>
-    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
-    <requiredResearchFacilities>
-      <li>MultiAnalyzer</li>
-    </requiredResearchFacilities>
-  </ResearchProjectDef> -->
 
 </Defs>
