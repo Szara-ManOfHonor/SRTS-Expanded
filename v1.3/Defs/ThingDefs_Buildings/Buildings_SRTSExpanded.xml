@@ -66,11 +66,9 @@ Internal power plant: 400w</description>
       <Mass>2640</Mass>
       <Beauty>15</Beauty>
     </statBases>
-		<stuffCategories>
-			<li>Metallic</li>
-		</stuffCategories>
-		<costStuffCount>120</costStuffCount>
     <costList>
+			<Plasteel>60</Plasteel>
+			<AluminiumBar>60</AluminiumBar>
 			<ReinforcedGlass>15</ReinforcedGlass>
 			<Plastic>15</Plastic>
 			<ComponentIndustrial>8</ComponentIndustrial>
@@ -161,11 +159,9 @@ Internal power plant: 650w</description> <!-- description of course... -->
       <Mass>3865</Mass> <!-- how much it weighs for a pawn to carry. My guess is they are light in this mod so pawns entering a map will throw it in their inventory rather than lose it, but i can check that later. -->
       <Beauty>25</Beauty> <!-- beauty on overlap, and for pawns -->
     </statBases>
-		<stuffCategories>
-			<li>Metallic</li>
-		</stuffCategories>
-		<costStuffCount>240</costStuffCount>
 		<costList>
+			<Plasteel>120</Plasteel>
+			<AluminiumBar>120</AluminiumBar>
 			<ReinforcedGlass>30</ReinforcedGlass>
 			<Plastic>30</Plastic>
 			<ComponentIndustrial>20</ComponentIndustrial>
@@ -257,11 +253,9 @@ Internal power plant: 1000w</description>
       <Mass>55650</Mass>
       <Beauty>25</Beauty>
     </statBases>
-		<stuffCategories>
-			<li>Metallic</li>
-		</stuffCategories>
-		<costStuffCount>2400</costStuffCount>
     <costList>
+			<Plasteel>1200</Plasteel>
+			<AluminiumBar>1200</AluminiumBar>
 			<ReinforcedGlass>60</ReinforcedGlass>
 			<Plastic>60</Plastic>
 			<ComponentIndustrial>20</ComponentIndustrial>
@@ -350,11 +344,10 @@ Internal power plant: 1,700w</description>
       <Mass>20</Mass>
       <Beauty>50</Beauty>
     </statBases>
-		<stuffCategories>
-			<li>Metallic</li>
-		</stuffCategories>
-		<costStuffCount>1800</costStuffCount>
     <costList>
+			<Plasteel>800</Plasteel>
+			<AluminiumBar>800</AluminiumBar>
+			<TitaniumBar>200</TitaniumBar>
 			<ReinforcedGlass>50</ReinforcedGlass>
 			<Plastic>50</Plastic>
 			<ComponentIndustrial>17</ComponentIndustrial>
@@ -447,11 +440,10 @@ Internal power plant: 1,700w</description>
       <Mass>20</Mass>
       <Beauty>50</Beauty>
     </statBases>
-		<stuffCategories>
-			<li>Metallic</li>
-		</stuffCategories>
-		<costStuffCount>1200</costStuffCount>
     <costList>
+			<Plasteel>550</Plasteel>
+			<AluminiumBar>550</AluminiumBar>
+			<TitaniumBar>100</TitaniumBar>
 			<ReinforcedGlass>50</ReinforcedGlass>
 			<Plastic>120</Plastic>
 			<ComponentIndustrial>10</ComponentIndustrial>
@@ -550,12 +542,11 @@ Internal power plant: 3,600w</description>
       <Flammability>0.3</Flammability>
       <Mass>20</Mass>
       <Beauty>75</Beauty>
-    </statBases>
-		<stuffCategories>
-			<li>Metallic</li>
-		</stuffCategories>
-		<costStuffCount>1800</costStuffCount>
+	  </statBases>
     <costList>
+			<Plasteel>300</Plasteel>
+			<AluminiumBar>800</AluminiumBar>
+			<TitaniumBar>700</TitaniumBar>
 			<ReinforcedGlass>120</ReinforcedGlass>
 			<Plastic>230</Plastic>
 			<ComponentIndustrial>20</ComponentIndustrial>
@@ -651,11 +642,10 @@ Internal power plant: 2,800w</description>
       <Mass>20</Mass>
       <Beauty>75</Beauty>
     </statBases>
-		<stuffCategories>
-			<li>Metallic</li>
-		</stuffCategories>
-		<costStuffCount>3500</costStuffCount>
     <costList>
+			<Plasteel>1600</Plasteel>
+			<AluminiumBar>1600</AluminiumBar>
+			<TitaniumBar>300</TitaniumBar>
 			<ReinforcedGlass>340</ReinforcedGlass>
 			<Plastic>460</Plastic>
 			<ComponentIndustrial>40</ComponentIndustrial>
@@ -754,11 +744,14 @@ Internal power plant: 12,000w</description>
       <Mass>20</Mass>
       <Beauty>1000</Beauty>
     </statBases>
- 		<stuffCategories>
-			<li>Metallic</li>
-		</stuffCategories>
-		<costStuffCount>8000</costStuffCount>
     <costList>
+			<Plasteel>1000</Plasteel>
+			<AluminiumBar>1000</AluminiumBar>
+			<TitaniumBar>2000</TitaniumBar>
+			<NitinolAlloy>1000</NitinolAlloy>
+			<CarbonAlloy>1000</CarbonAlloy>
+			<DepletedUranium>500</DepletedUranium>
+			<SilverBar>1000</SilverBar>
 			<ReinforcedGlass>1000</ReinforcedGlass>
 			<Plastic>1100</Plastic>
 			<ComponentIndustrial>200</ComponentIndustrial>
