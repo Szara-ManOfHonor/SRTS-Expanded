@@ -1,3 +1,5 @@
+Current version 1.0.0 for Rimworld 1.3.*
+
 *Updates will not be made for old versions of Rimworld.* 
 
 This version will be balanced for the HSK modpack, check out our Discord at https://discord.gg/VrmrybqufD
