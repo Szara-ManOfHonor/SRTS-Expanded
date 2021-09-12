@@ -679,17 +679,17 @@ Internal power plant: 2,800w</description>
   <ThingDef ParentName="NECShipBase">
     <defName>SRTSMkIV</defName>
     <label>SRTS Mk.IV: Genesis</label>
-    <description>The Genesis transport ship is highly advanced archotech technology. Somehow it fuels itself with a spec of uranium, and incorporates extra dimensional shiftspace to haul cargo much heavier and bigger than the ship itself.
+    <description>The Genesis transport ship is highly advanced archotech technology. Fueled by mixed oxide fuel rods, and incorporates extra dimensional shiftspace to haul cargo much heavier and bigger than the ship itself.
 
 Passenger cap: No limit
 
 ----------------------------
 Speed: Legendary
-Fuel type: Uranium
+Fuel type: Mixed Oxide Uranium-Plutonium Fuel Rod
 Fuel cap: Practically unlimited
 Fuel efficiency: Ultimate
 ----------------------------
-Cargo cap: No Max
+Cargo cap: Extreme
 Internal power plant: 12,000w</description>
     <graphicData>
       <texPath>Genesis</texPath>
@@ -726,14 +726,14 @@ Internal power plant: 12,000w</description>
 			<Microchips>20</Microchips>
 			<Neutroamine>400</Neutroamine>
 			<MagneticMaterial>40</MagneticMaterial>
-			<Uranium>1</Uranium>
+			<FuelRodsMOX>2</FuelRodsMOX>
 			<BiosyntheticMaterial>30</BiosyntheticMaterial>
 			<Hexcell>30</Hexcell>
     </costList>
     <comps>
       <li Class="CompProperties_Transporter">
         <restEffectiveness>17</restEffectiveness>
-        <massCapacity>999999999</massCapacity>
+        <massCapacity>900000000</massCapacity>
       </li>
       <li Class="SRTS.CompProperties_LaunchableSRTS">
         <travelSpeed>80</travelSpeed>
@@ -746,13 +746,13 @@ Internal power plant: 12,000w</description>
       <li Class="CompProperties_Refuelable">
         <fuelLabel>Hyperspace Containment</fuelLabel>
         <fuelGizmoLabel>Hyperspace Containment</fuelGizmoLabel>
-        <fuelCapacity>10000000</fuelCapacity>
-        <fuelMultiplier>99999</fuelMultiplier>
-        <initialConfigurableTargetFuelLevel>10000000</initialConfigurableTargetFuelLevel>
+        <fuelCapacity>10000</fuelCapacity>
+        <fuelMultiplier>5000</fuelMultiplier>
+        <initialConfigurableTargetFuelLevel>10000</initialConfigurableTargetFuelLevel>
         <initialFuelPercent>1.0</initialFuelPercent>
         <fuelFilter>
           <thingDefs>
-            <li>Uranium</li>
+            <li>FuelRodsMOX</li>
           </thingDefs>
         </fuelFilter>
         <consumeFuelOnlyWhenUsed>true</consumeFuelOnlyWhenUsed>
