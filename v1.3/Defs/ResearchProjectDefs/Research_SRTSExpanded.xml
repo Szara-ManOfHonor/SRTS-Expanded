@@ -7,7 +7,7 @@
     <label>The Superpod</label>
     <description>Slap a few Orbital Relay Launch Modules onto a traditional transport pod and Voilà! You've got a ship capable of return flight! It's just a first shaky step though.</description>
     <baseCost>4800</baseCost>
-    <techLevel>Industrial</techLevel>
+    <techLevel>Spacer</techLevel>
     <prerequisites>
       <li>TransportPod</li>
     </prerequisites>
@@ -22,7 +22,7 @@
     <label>The Skip</label>
     <description>This vessel design was conceived after a nearby colony on this world tried their own version of a superpod. They decided to take apart the pods and put it together uniquely. It turned out really nice, and since then it's become popular as a design due to its cheap material cost and reliable transport. \n\nHas military potential.</description>
     <baseCost>6200</baseCost>
-    <techLevel>Industrial</techLevel>
+    <techLevel>Spacer</techLevel>
     <prerequisites>
       <li>Research_SRTSSuperpod</li>
     </prerequisites>
@@ -40,7 +40,7 @@
     <label>The SRAF</label>
     <description>A large aerial transport freighter for cargo. We don't know the history of this ship, but it's everywhere. You can find an SRAF on every homeworld in the millions. Real shit on the chemfuel mileage and very slow, but the cargo room is amazing.</description>
     <baseCost>7200</baseCost>
-    <techLevel>Industrial</techLevel>
+    <techLevel>Spacer</techLevel>
     <prerequisites>
       <li>Research_SRTSSuperpod</li>
       <li>Fabrication</li>
@@ -57,7 +57,7 @@
     <label>The Drop Ship</label>
     <description>A large aerial transport freighter for cargo. The TEK-7 class space-faring ship is rather new. It's powered by contential means, but uses more modern technology to achieve more than it's predecessors.\n\nTerra Enclave Kingdrone - 7th Variation, Year 4186. This class has seen much combat, through many model variations each specialized in specific roles. \n\nTEK-7 is designated as a transport carrier.</description>
     <baseCost>12000</baseCost>
-    <techLevel>Industrial</techLevel>
+    <techLevel>Spacer</techLevel>
     <prerequisites>
       <li>Research_SRAF</li>
     </prerequisites>
